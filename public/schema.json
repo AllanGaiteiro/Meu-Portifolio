@@ -1,0 +1,16 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Allan Gaiteiro",
+    "url": "https://github.com/AllanGaiteiro/Meu-Portifolio",
+    "sameAs": [
+        "https://www.linkedin.com/in/allangaiteiro/",
+        "https://twitter.com/allangaiteiro",
+        "https://www.instagram.com/allangaiteiro/"
+    ],
+    "jobTitle": "Desenvolvedor Full Stack",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Capital Empreendedor"
+    }
+}
