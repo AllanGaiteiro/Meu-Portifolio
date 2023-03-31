@@ -9,6 +9,7 @@
     content="Confira meu portfólio online e conheça meus trabalhos como desenvolvedor web. Veja projetos de sites responsivos, e-commerce, landing pages e muito mais.">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/header.css" />
   <link rel="stylesheet" href="./style/bootstrap.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
@@ -23,8 +24,15 @@
         <span class="preto">Allan</span> <span class="azul">Gaiteiro</span>
       </h1>
     </div>
+    <!-- Botão de menu para telas menores -->
+    <div class="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Serviços</a></li>
@@ -32,7 +40,6 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section id="about">
       <div class="container">
@@ -144,6 +151,8 @@
   <footer>
     <p>Direitos autorais © 2023 Allan Gaiteiro</p>
   </footer>
+
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
