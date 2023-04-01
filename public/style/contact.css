@@ -1,0 +1,47 @@
+/*Estilização da seção "Contatos" */
+
+#contact {
+  margin-top: 50px;
+}
+
+#contact h2 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#contact p {
+  color: white;
+  text-align: center;
+}
+
+#contact ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact li {
+  color: white;
+  margin-right: 20px;
+}
+
+#contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+#contact a:hover {
+  color: #0077b5;
+}
+
+#contact i {
+  font-size: 28px;
+  margin-right: 10px;
+}
