@@ -27,7 +27,7 @@
 }
 
 .azul {
-  color:  var(--link-color);
+  color: var(--link-color);
 }
 
 .preto {
@@ -40,71 +40,14 @@ body {
     var(--primary-color),
     var(--secondary-color)
   );
-  background-image: -webkit-linear-gradient(110deg,  var(--primary-color) 65%, var(--about-color) 65%);
+  background-image: -webkit-linear-gradient(
+    110deg,
+    var(--primary-color) 65%,
+    var(--about-color) 65%
+  );
   font-family: var(--font-family);
   margin: 0;
   padding: 0;
-}
-
-/* Estilo do cabeçalho:  ./style/header.css */
-
-/* Estilização da seção "Sobre" */
-
-#about {
-  background-color:var(--about-color);
-  display: flex;
-  padding-bottom: 40px;
-}
-
-.section-heading {
-  font-size: 40px;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-hr.my-4 {
-  border-top: 3px solid #bbb;
-  width: 100px;
-  margin: 0 auto 30px;
-}
-
-.about-content {
-  text-align: justify;
-}
-
-.about-content img {
-  width: 250px;
-  display: block;
-  margin: 0 auto;
-}
-
-.about-content p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-
-.social-icons {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.social-icons a {
-  color: #bbb;
-  font-size: 30px;
-  margin: 0 10px;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-  color: #555;
-}
-
-.img-fluid {
-  border-radius: 50%;
 }
 
 /* Estilização da seção "Projetos" */
@@ -113,7 +56,7 @@ hr.my-4 {
   padding: 50px 0;
 }
 
-#projects h2{
+#projects h2 {
   text-align: center;
 }
 
@@ -124,73 +67,13 @@ hr.my-4 {
   gap: 20px;
 }
 
-.contact_btn {
-  display: inline-block;
-  
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact_btn:hover {
-  background-color:#0077b5;
-  color: #fff;
-}
-
-/*Estilização da seção "Contatos" */
-
-#contact {
-  margin-top: 50px;
-}
-
-#contact h2 {
-  color: white;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-#contact p {
-  color: white;
-  text-align: center;
-}
-
-#contact ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#contact li {
-  color: white;
-  margin-right: 20px;
-}
-
-#contact a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  transition: color 0.2s ease-in-out;
-}
-
-#contact a:hover {
-  color: #0077b5;
-}
-
-#contact i {
-  font-size: 28px;
-  margin-right: 10px;
-}
 /* Estilo do rodapé */
 footer {
   background-color: #ccc;
   color: #333;
   padding: 1rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
 }
