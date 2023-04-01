@@ -5,7 +5,24 @@
   <title>Allan Gaiteiro - Desenvolvedor Full-Stack</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="application/ld+json" src="./schema.json"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Allan Gaiteiro",
+      "url": "https://github.com/AllanGaiteiro/Meu-Portifolio",
+      "sameAs": [
+          "https://www.linkedin.com/in/allangaiteiro/",
+          "https://twitter.com/allangaiteiro",
+          "https://www.instagram.com/allangaiteiro/"
+      ],
+      "jobTitle": "Desenvolvedor Full Stack",
+      "worksFor": {
+          "@type": "Organization",
+          "name": "Capital Empreendedor"
+      }
+  }
+  </script>
   <meta property="og:image"
     content="https://firebasestorage.googleapis.com/v0/b/allan-gaiteiro.appspot.com/o/profile2.jpeg?alt=media&token=18f4420e-b3d4-4b97-8db1-8b471f401ff9">
   <meta property="og:url" content="https://allan-gaiteiro.web.app/">
@@ -18,6 +35,8 @@
     content="Confira meu portfólio online e conheça meus trabalhos como desenvolvedor web. Veja projetos de sites responsivos, e-commerce, landing pages e muito mais.">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/about.css" />
+  <link rel="stylesheet" href="./style/contact.css" />
   <link rel="stylesheet" href="./style/galery.css" />
   <link rel="stylesheet" href="./style/galery-mobile.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -41,17 +60,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+          <!--
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
           </li>
+        -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#about">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
+            <a class="nav-link" href="#projects">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#contact">Contato</a>
           </li>
         </ul>
       </div>
@@ -65,8 +86,8 @@
             <h2 class="section-heading">
               <span class="preto">Sobre </span> <span class="azul">Mim</span>
             </h2>
-            <hr class="my-4" />
-            <div class="about-content mt-5 d-flex justify-content-between">
+            <hr class="my-lg-4" />
+            <div class="about-content mt-lg-5 d-lg-flex justify-content-between">
               <div>
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/allan-gaiteiro.appspot.com/o/profile2.jpeg?alt=media&token=18f4420e-b3d4-4b97-8db1-8b471f401ff9"
@@ -83,15 +104,16 @@
                 </div>
               </div>
 
-              <div class="m-5 " style=" width: 60%;">
-                <p class="mb-4 ml-3 mr-3">
+              <div class="about-content-description m-lg-5">
+                <p class="mb-4 ml-lg-3 mr-3">
                   Olá, sou Allan Gaiteiro, um desenvolvedor full stack em Node.js com habilidades em soluções web
                   personalizadas e escaláveis. Trabalho bem em equipe e colaboro com outros desenvolvedores para criar
                   soluções inovadoras e de alta qualidade. Além de ser entusiasta de tecnologia e programação, adoro
                   jogos de computador. Vamos trabalhar juntos para alcançar seus objetivos de negócios!
                 </p>
                 <div class="mt-5">
-                  <a class="contact_btn float-right" href="#" target="_blank">Contate me</a>
+                  <a class="contact_btn" href="https://api.whatsapp.com/send/?phone=5519999333358"
+                    target="_blank">Contate me</a>
                 </div>
 
               </div>
@@ -127,7 +149,7 @@
         </div>
         <div class="gallery-mobile">
           <img src="./img/ebookids-fotor-bg-remover-2023033118732.png" alt="Protótipo do projeto Ebookids em Figma" />
-          <div class="description" style="text-align: left;">
+          <div class="description description-left">
             <h3>Ebookids</h3>
             <p>Confira o protótipo do projeto Ebookids desenvolvido no Figma para a criação de livros digitais
               infantis.
@@ -169,18 +191,23 @@
       <ul>
         <li>
           <a href="https://www.instagram.com/allan_gaiteiro/" target="_blank"><i class="fab fa-instagram"></i>
-            Instagram</a>
+            <span class="d-none d-lg-block d-md-block d-xxl-block">Instagram</span>
+          </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/allan-gaiteiro/" target="_blank"><i class="fab fa-linkedin"></i>
-            LinkedIn</a>
+            <span class="d-none d-lg-block d-md-block d-xxl-block">LinkedIn</span>
+          </a>
         </li>
         <li>
           <a href="https://api.whatsapp.com/send/?phone=5519999333358" target="_blank"><i class="fab fa-whatsapp"></i>
-            WhatsApp</a>
+            <span class="d-none d-lg-block d-md-block d-xxl-block">WhatsApp</span>
+          </a>
         </li>
         <li>
-          <a href="https://github.com/allangaiteiro" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://github.com/allangaiteiro" target="_blank"><i class="fab fa-github"></i>
+            <span class="d-none d-lg-block d-md-block d-xxl-block">GitHub</span>
+          </a>
         </li>
       </ul>
     </section>
