@@ -40,6 +40,7 @@ body {
     var(--primary-color),
     var(--secondary-color)
   );
+  background-image: -webkit-linear-gradient(110deg,  var(--primary-color) 65%, var(--about-color) 65%);
   font-family: var(--font-family);
   margin: 0;
   padding: 0;
@@ -52,7 +53,7 @@ body {
 #about {
   background-color:var(--about-color);
   display: flex;
-  padding: 80px 0;
+  padding-bottom: 40px;
 }
 
 .section-heading {
