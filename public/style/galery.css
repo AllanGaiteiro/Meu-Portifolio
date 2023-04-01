@@ -82,7 +82,7 @@
   .notebook-addressbar h3 {
     margin: 0;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 600px;
     color: #444;
   }
   
@@ -90,6 +90,10 @@
   .notebook-content img {
     max-width: 100%;
     height: auto;
+    
+  }
+  .notebook-content{
     margin-bottom: 20px;
+    overflow:hidden;
   }
   
