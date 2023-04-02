@@ -93,7 +93,8 @@
 @media only screen and (max-width: 767px) {
   #contacts ul {
     display: block;
-    padding-bottom: 40px;
+    padding: 0px;
+    margin: 0px;
   }
   .btn {
     width: 80%;

@@ -48,8 +48,8 @@ p {
 body {
   background-image: -webkit-linear-gradient(
     110deg,
-    var(--primary-color) 75%,
-    var(--about-color) 75%
+    var(--primary-color) 70%,
+    var(--about-color) 70%
   );
   font-family: var(--font-family);
   margin: 0;
