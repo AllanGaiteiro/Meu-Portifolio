@@ -46,15 +46,10 @@ p {
 }
 
 body {
-  background: linear-gradient(
-    45deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
   background-image: -webkit-linear-gradient(
     110deg,
-    var(--primary-color) 65%,
-    var(--about-color) 65%
+    var(--primary-color) 75%,
+    var(--about-color) 75%
   );
   font-family: var(--font-family);
   margin: 0;
@@ -64,7 +59,7 @@ body {
 /* Estilização da seção "Projetos" */
 
 #projects {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 #projects h2 {
