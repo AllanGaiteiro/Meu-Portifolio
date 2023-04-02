@@ -25,13 +25,24 @@
   --button-hover-background-color: #000;
   --button-hover-color: #fff;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
 .azul {
   color: var(--link-color);
 }
 
 .preto {
   color: black;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 body {
@@ -73,7 +84,4 @@ footer {
   color: #333;
   padding: 1rem;
   text-align: center;
-}
-
-@media only screen and (max-width: 767px) {
 }

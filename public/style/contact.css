@@ -1,47 +1,101 @@
-/*Estilização da seção "Contatos" */
-
-#contact {
+#contacts {
   margin-top: 50px;
 }
 
-#contact h2 {
-  color: white;
-  font-size: 32px;
+#contacts h2 {
   text-align: center;
-  margin-bottom: 20px;
-}
-#contact p {
-  color: white;
-  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-#contact ul {
-  list-style-type: none;
+#contacts ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-#contact li {
-  color: white;
-  margin-right: 20px;
+#contacts li {
+  list-style: none;
+  margin: 0 10px;
 }
 
-#contact a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-align: center;
   text-decoration: none;
-  color: white;
-  font-size: 20px;
-  transition: color 0.2s ease-in-out;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
-#contact a:hover {
-  color: #0077b5;
+.btn-facebook {
+  background-color: #1877f2;
 }
 
-#contact i {
-  font-size: 28px;
-  margin-right: 10px;
+.btn-linkedin {
+  background-color: #0e76a8;
+}
+
+.btn-instagram {
+  background-color: #c13584;
+}
+
+.btn-github {
+  background-color: #333;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background-color: #128c7e;
+}
+
+.btn-email {
+  background-color: #d32020;
+}
+
+.btn-email:hover,
+.btn-email:focus {
+  background-color: #f83b34;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:visited {
+  color: #fff;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-content-description {
+    width: 100%;
+  }
+  .btn {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #contacts ul {
+    display: block;
+    padding-bottom: 40px;
+  }
+  .btn {
+    width: 80%;
+  }
 }
