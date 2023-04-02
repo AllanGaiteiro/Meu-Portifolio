@@ -7,21 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org/",
+      "@context": "http://schema.org",
       "@type": "Person",
       "name": "Allan Gaiteiro",
-      "url": "https://github.com/AllanGaiteiro/Meu-Portifolio",
-      "sameAs": [
-          "https://www.linkedin.com/in/allangaiteiro/",
-          "https://twitter.com/allangaiteiro",
-          "https://www.instagram.com/allangaiteiro/"
-      ],
+      "url": "https://www.allangaiteiro.com.br/",
+      "image": "https://firebasestorage.googleapis.com/v0/b/allan-gaiteiro.appspot.com/o/profile2.jpeg?alt=media&token=18f4420e-b3d4-4b97-8db1-8b471f401ff9",
+      "description": "Desenvolvedor full stack em Node.js com habilidades em soluções web personalizadas e escaláveis.",
       "jobTitle": "Desenvolvedor Full Stack",
       "worksFor": {
-          "@type": "Organization",
-          "name": "Capital Empreendedor"
+        "@type": "Organization",
+        "name": "Capital Empreendedor"
+      },
+      "sameAs": [
+        "https://www.instagram.com/allan_gaiteiro/",
+        "https://www.linkedin.com/in/allan-gaiteiro/",
+        "https://api.whatsapp.com/send/?phone=5519999333358",
+        "https://github.com/allangaiteiro"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-19-999333358",
+        "contactType": "WhatsApp"
       }
-  }
+    }
   </script>
   <meta property="og:image"
     content="https://firebasestorage.googleapis.com/v0/b/allan-gaiteiro.appspot.com/o/profile2.jpeg?alt=media&token=18f4420e-b3d4-4b97-8db1-8b471f401ff9">
@@ -30,10 +38,12 @@
   <meta property="og:title" content="Allan Gaiteiro Portfolio">
   <meta property="og:description" content="Portfolio do Allan Gaiteiro Desenvolvedor Full-Stack">
   <meta property="fb:app_id" content="1587157761762614">
-  <meta name="google-site-verification" content="google77d976a352033458.html" />
+  <meta name="google-site-verification" content="https://allan-gaiteiro.web.app/google77d976a352033458.html" />
   <meta name="description"
     content="Confira meu portfólio online e conheça meus trabalhos como desenvolvedor web. Veja projetos de sites responsivos, e-commerce, landing pages e muito mais.">
   <meta name="robots" content="index, follow">
+  <link rel="sitemap" type="application/xml" href="https://allan-gaiteiro.web.app/sitemap.xml" />
+
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="./style/about.css" />
   <link rel="stylesheet" href="./style/contact.css" />
@@ -47,11 +57,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Person">
   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="logo">
-        <h1>
+        <h1 itemprop="name">
           <span class="preto">Allan</span> <span class="azul">Gaiteiro</span>
         </h1>
       </div>
@@ -79,7 +89,7 @@
     </nav>
   </header>
   <main>
-    <section id="about">
+    <section id="about" itemprop="description">
       <div class="container">
         <div>
           <div>
@@ -89,7 +99,7 @@
             <hr class="my-lg-4" />
             <div class="about-content mt-lg-5 d-lg-flex justify-content-between">
               <div>
-                <img
+                <img itemprop="image"
                   src="https://firebasestorage.googleapis.com/v0/b/allan-gaiteiro.appspot.com/o/profile2.jpeg?alt=media&token=18f4420e-b3d4-4b97-8db1-8b471f401ff9"
                   alt="Foto de Allan Gaiteiro" style="width: 300px; height: 300px; object-fit: cover"
                   class="img-fluid rounded-circle mb-3" />
@@ -137,7 +147,8 @@
               <h3>VR Cursos</h3>
             </div>
             <div class="notebook-content">
-              <img src="./img/projeto_vr_cursos.png" alt="Projeto em Figma de um sistema web de cursos online" />
+              <img itemprop="image" src="./img/projeto_vr_cursos.png"
+                alt="Projeto em Figma de um sistema web de cursos online" />
             </div>
           </div>
           <div class="description">
@@ -148,11 +159,11 @@
           </div>
         </div>
         <div class="gallery-mobile">
-          <img src="./img/ebookids-fotor-bg-remover-2023033118732.png" alt="Protótipo do projeto Ebookids em Figma" />
+          <img itemprop="image" src="./img/ebookids-fotor-bg-remover-2023033118732.png"
+            alt="Protótipo do projeto Ebookids em Figma" />
           <div class="description description-left">
             <h3>Ebookids</h3>
-            <p>Confira o protótipo do projeto Ebookids desenvolvido no Figma para a criação de livros digitais
-              infantis.
+            <p>Confira o protótipo do projeto Ebookids desenvolvido no Figma para a criação de livros digitais infantis.
             </p>
             <a class="card-btn"
               href="https://www.figma.com/proto/xySk0dp8tY0y0SQQG0CUEu/vr-courses?node-id=10-479&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A235"
@@ -168,7 +179,7 @@
               <h3>Integratec</h3>
             </div>
             <div class="notebook-content">
-              <img src="./img/artigo.png" alt="" />
+              <img itemprop="image" src="./img/artigo.png" alt="" />
             </div>
           </div>
           <div class="description">
@@ -180,36 +191,65 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
-    <section id="contact">
-      <h2>
-        <span class="preto">Contate </span>
-        <span style="color: white">Me</span>
+    <section id="projects">
+      <h2 class="section-heading">
+        <span class="preto">Meus </span> <span class="azul">Projetos</span>
       </h2>
-      <p>Você pode me encontrar nas seguintes redes sociais:</p>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/allan_gaiteiro/" target="_blank"><i class="fab fa-instagram"></i>
-            <span class="d-none d-lg-block d-md-block d-xxl-block">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/allan-gaiteiro/" target="_blank"><i class="fab fa-linkedin"></i>
-            <span class="d-none d-lg-block d-md-block d-xxl-block">LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://api.whatsapp.com/send/?phone=5519999333358" target="_blank"><i class="fab fa-whatsapp"></i>
-            <span class="d-none d-lg-block d-md-block d-xxl-block">WhatsApp</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/allangaiteiro" target="_blank"><i class="fab fa-github"></i>
-            <span class="d-none d-lg-block d-md-block d-xxl-block">GitHub</span>
-          </a>
-        </li>
-      </ul>
+      <div class="gallery">
+        <div class="gallery-item">
+          <div class="notebook-container">
+            <div class="notebook-topbar">
+              <div class="close-btn"></div>
+            </div>
+            <div class="notebook-addressbar">
+              <h3>VR Cursos</h3>
+            </div>
+            <div class="notebook-content">
+              <img itemprop="image" src="./img/projeto_vr_cursos.png"
+                alt="Projeto em Figma de um sistema web de cursos online" />
+            </div>
+          </div>
+          <div class="description">
+            <p>Confira meus projetos de design e desenvolvimento, incluindo um sistema de cursos online, um protótipo de
+              livro digital infantil e um site de empresa fictícia. Clique no link abaixo para ver mais!</p>
+            <a href="https://www.figma.com/proto/xySk0dp8tY0y0SQQG0CUEu/vr-courses?node-id=10-479&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A235"
+              target="_blank">Saiba mais</a>
+          </div>
+        </div>
+        <div class="gallery-mobile">
+          <img itemprop="image" src="./img/ebookids-fotor-bg-remover-2023033118732.png"
+            alt="Protótipo do projeto Ebookids em Figma" />
+          <div class="description description-left">
+            <h3>Ebookids</h3>
+            <p>Confira o protótipo do projeto Ebookids desenvolvido no Figma para a criação de livros digitais infantis.
+            </p>
+            <a class="card-btn"
+              href="https://www.figma.com/proto/xySk0dp8tY0y0SQQG0CUEu/vr-courses?node-id=10-479&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A235"
+              target="_blank">Saiba mais</a>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="notebook-container">
+            <div class="notebook-topbar">
+              <div class="close-btn"></div>
+            </div>
+            <div class="notebook-addressbar">
+              <h3>Integratec</h3>
+            </div>
+            <div class="notebook-content">
+              <img itemprop="image" src="./img/artigo.png" alt="" />
+            </div>
+          </div>
+          <div class="description">
+            <p>O Integratec foi um projeto desenvolvido durante a disciplina de Prática em Projeto de Sistemas II na
+              FATEC Taquaritinga. O objetivo era criar um site para uma empresa fictícia e aplicar conceitos de
+              Bootstrap, SASS e JavaScript. Confira o resultado final clicando no botão abaixo:</p>
+            <a href="https://allangaiteiro.github.io/Bootstrap-SASS-JavaScript-INTEGRATEC-FATEC-PPSII/index.html"
+              target="_blank">Ver mais</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
