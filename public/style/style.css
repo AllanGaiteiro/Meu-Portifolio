@@ -1,82 +1,100 @@
 /* Definições gerais */
 :root {
-  --primary-color: #2a2a72;
-  --secondary-color: #009ffd;
-  --about-color: #f9f9f9;
   --font-family: Arial, sans-serif;
-  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  --hr-color: #bbb;
-  --section-margin-top: 50px;
-  --section-margin-bottom: 50px;
-  --section-padding: 80px 0;
-  --heading-font-size: 40px;
-  --heading-font-weight: 700;
-  --heading-margin-top: 0;
-  --heading-margin-bottom: 15px;
-  --text-color: #333;
-  --text-color-light: #999;
-  --text-color-white: #f5f5f5;
-  --link-color: #0077b5;
-  --link-color-hover: #005b8e;
-  --icon-font-size: 28px;
-  --icon-margin-right: 10px;
-  --button-background-color: #fff;
-  --button-color: #000;
-  --button-hover-background-color: #000;
-  --button-hover-color: #fff;
+  --background-color: #121212;
+  /* Fundo muito escuro */
+  --card-background: #1E1E1E;
+  /* Cartões e seções */
+  --accent-color: #4CAF50;
+  /* Verde vibrante para ações */
+  --text-color: #E0E0E0;
+  --text-menu-color: #4CAF50;
+  /* Texto claro */
+  --muted-color: #2f4049;
+  /* Texto secundário */
 }
+
+body.white-mode {
+  --background-color: #121212;
+  /* Fundo branco */
+  --card-background: #F1F1F1;
+  /* Cartões e seções */
+  --accent-color: #0077B5;
+  /* Azul para ações */
+  --text-color: #212121;
+  --text-menu-color: #E0E0E0;
+
+  /* Texto escuro */
+  --muted-color: #FFFFFF;
+  /* Texto secundário */
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-.azul {
-  color: var(--link-color);
+  font-family: var(--font-family);
 }
 
-.preto {
-  color: black;
+li {
+  list-style: none;
 }
 
-.logo {
-  font-size: 32px;
-  font-weight: bold;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: -webkit-linear-gradient(
-    110deg,
-    var(--primary-color) 70%,
-    var(--about-color) 70%
-  );
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-}
-
-/* Estilização da seção "Projetos" */
-
-#projects {
-  padding: 100px 0;
-}
-
-#projects h2 {
-  text-align: center;
-}
-
-.gallery {
+  font-family: Arial, sans-serif;
+  background: var(--muted-color);
+  color: var(--text-color);
+  transition: all 0.5s ease;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Estilo do rodapé */
-footer {
-  background-color: #ccc;
-  color: #333;
-  padding: 1rem;
-  text-align: center;
+.container {
+  display: flex;
+}
+
+.animated-heading {
+  display: inline-block;
+  overflow: hidden;
+  /* Esconde o texto que não foi "digitado" ainda */
+  /* Evita que o texto quebre em várias linhas */
+  border-right: 2px solid var(--accent-color);
+  /* Cursor de digitação */
+  animation: blink 0.7s step-end infinite;
+  /* Animação do cursor */
+}
+
+.blue {
+  color: var(--accent-color);
+}
+
+.black {
+  color: black;
+}
+
+.black-blue {
+  background: linear-gradient(90deg, black 90px, var(--accent-color)90px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+@media (max-width: 768px) {
+  body{
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+  }
 }

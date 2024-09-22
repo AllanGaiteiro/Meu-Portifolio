@@ -1,0 +1,155 @@
+/* Estilos padrão (desktop) */
+.navbar-navigation {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 100vh;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Vertical */
+}
+
+.navbar-navigation ul {
+  width: 100%;
+  list-style: none;
+}
+
+.navbar-navigation li {
+  margin: 20px 0;
+  align-items: center;
+}
+
+.navbar-navigation a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  text-align: justify;
+  color: var(--text-menu-color);
+  font-size: 1.2em;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: all 1s;
+}
+
+.navbar-navigation a:hover {
+  border: 2px solid var(--text-menu-color);
+}
+
+.navbar-navigation a:focus {
+  color: white;
+  box-shadow: inset 0 0 0 50px var(--text-menu-color);
+}
+
+/* Media query para mobile (largura máxima de 768px) */
+@media (max-width: 768px) {
+  .navbar-navigation {
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    z-index: 3;
+    flex-direction: row ; /* Alinha na horizontal */
+    justify-content: space-around;
+  }
+
+  .navbar-navigation ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .navbar-navigation li {
+    margin: 0;
+  }
+
+  .navbar-navigation a {
+    width: auto;
+    text-align: center;
+    font-size: 1em;
+  }
+  .navbar-navigation i{
+    display: none;
+  }
+
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+    /* Fica invisível metade do tempo */
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    /* Finaliza visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
+  }
+}
+
+/* Estilos para o interruptor */
+.switch {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #165286;
+  /* Azul céu escuro quando desativado */
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  /* Bola branca quando desativada */
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #87CEEB;
+  /* Azul céu quando ativado */
+}
+
+input:checked+.slider:before {
+  background-color: rgb(251, 255, 0);
+  /* Bola amarela quando ativada */
+  transform: translateX(26px);
+}
+
+@media (max-width: 768px) {
+  .theme-switcher{
+    position: absolute;
+    top: 150px;
+    right: 40px;
+
+  }
+}

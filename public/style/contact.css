@@ -1,32 +1,25 @@
-#contacts {
-  margin-top: 50px;
+#contact {
+  padding: 20px;
 }
 
-#contacts h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-#contacts ul {
+#contact ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#contacts li {
-  list-style: none;
-  margin: 0 10px;
+.contact-container {
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 20px;
   font-size: 1.2rem;
-  border-radius: 30px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
+  flex-grow: 1;
   color: #fff;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
@@ -81,22 +74,34 @@
 .btn:visited {
   color: #fff;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .about-content-description {
-    width: 100%;
-  }
-  .btn {
-    width: 40%;
-  }
-}
 
-@media only screen and (max-width: 767px) {
-  #contacts ul {
-    display: block;
+@media (max-width: 768px) {
+  #contact {
     padding: 0px;
     margin: 0px;
+    height: 100vh;
   }
+
+  #contact p {
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+  }
+
+  .contact-container {
+    margin: 0px;
+  }
+
+  #contact ul {
+    margin: 0px;
+    display: block;
+
+
+  }
+
   .btn {
-    width: 80%;
+    display: block;
+    padding: 10px 0px;
+    margin: 5px 10px;
   }
 }

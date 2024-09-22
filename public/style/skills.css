@@ -1,0 +1,103 @@
+.skills-container {
+  padding: 20px;
+}
+
+.skills-category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-category p,
+.skills-category h3 {
+  margin: 0;
+}
+
+.skills-description h3 {
+  font-size: 18px;
+}
+
+.skills-description p {
+  font-size: 10px;
+}
+
+.skills-list {
+  display: flex;
+  overflow-x: auto;
+  /* Habilita o scroll horizontal */
+  gap: 15px;
+  padding: 0px;
+  /* Espaço extra para evitar que o conteúdo fique muito próximo da borda */
+  width: 300px
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+  margin-bottom: 0px;
+}
+
+.skill-item span {
+  margin-bottom: 0px;
+
+}
+.skill-item:hover {
+  color: var(--text-color);
+}
+
+.skill-icon {
+  height: 50px;
+  width: auto;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Adiciona estilos para o scroll horizontal */
+.skills-list::-webkit-scrollbar {
+  height: 8px;
+  margin: 0px;
+}
+
+.skills-list::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.skills-list::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}
+
+hr{
+  margin: 10px;
+}
+.skills-list.dragging {
+  cursor: grabbing;
+}
+
+@media (max-width: 768px) {
+  #skills{
+    margin: 0px;
+    padding: 0px;
+  }
+  .skill-item{
+    color: var(--text-color);
+  }
+  .skills-category{
+    display: block;
+  }
+  .skills-description{
+    margin: 5px;
+
+  }
+  .skills-description p {
+    display: none;
+  }
+  .skills-list {
+    min-width: 200px;
+  }
+}
