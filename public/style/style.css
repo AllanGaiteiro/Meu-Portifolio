@@ -79,11 +79,11 @@ body {
 }
 
 .black {
-  color: black;
+  color: var(--text-color);
 }
 
 .black-blue {
-  background: linear-gradient(90deg, black 90px, var(--accent-color)90px);
+  background: linear-gradient(90deg, var(--text-color) 90px, var(--accent-color)90px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
