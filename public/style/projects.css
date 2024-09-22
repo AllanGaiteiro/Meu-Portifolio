@@ -80,8 +80,13 @@
 
 @media (max-width: 400px) {
     .project-card {
-        width: 30vw;
+        width: 90vw;
         padding: 2px ;
+        margin: auto;
         margin-bottom: 5px;
+    }
+
+    .project-card p {
+        display: block;
     }
 }
