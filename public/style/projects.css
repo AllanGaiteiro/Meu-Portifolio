@@ -68,12 +68,20 @@
     }
 
     .project-card {
-        width: 120px;
+        width: 130px;
         padding: 5px ;
         margin-bottom: 5px;
     }
 
     .project-card p {
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-card {
+        width: 30vw;
+        padding: 2px ;
+        margin-bottom: 5px;
     }
 }
