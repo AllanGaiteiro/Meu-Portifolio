@@ -75,6 +75,22 @@
   color: #fff;
 }
 
+@media (max-width: 1200px) {
+  #contact ul {
+    margin: 0px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    padding: 10px 0px;
+    margin: 5px 10px;
+  }
+
+}
+
 @media (max-width: 768px) {
   #contact {
     padding: 0px;
@@ -95,8 +111,6 @@
   #contact ul {
     margin: 0px;
     display: block;
-
-
   }
 
   .btn {

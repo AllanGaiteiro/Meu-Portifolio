@@ -81,10 +81,13 @@ hr{
   #skills{
     margin: 0px;
     padding: 0px;
+    height: 1000px;
+    background-color: var(--muted-color);
   }
 
   .skills-category{
     display: block;
+
   }
   .skills-description{
     margin: 5px;
@@ -95,5 +98,13 @@ hr{
   }
   .skills-list {
     min-width: 200px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-list {
+    min-width: 200px;
+    max-width: 70vw;
   }
 }

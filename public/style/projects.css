@@ -7,6 +7,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    overflow-y: auto;  /* Adiciona o scroll vertical */
+    max-height: 300px; /* Altura máxima para ativar o scroll */
+
 }
 
 .project-card {
@@ -53,6 +56,20 @@
     background-color: var(--accent-color);
 }
 
+/* Personaliza a barra de scroll */
+.projects-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background-color: #e1e1e1;
+}
+
 @media (max-width: 768px) {
     #projects {
         height: 100vh;
@@ -60,16 +77,19 @@
 
     .projects-container {
         margin: 0px;
+        max-height: 300px; /* Altura máxima menor para telas menores */
     }
 
     .projects-grid {
         justify-content: space-between;
         gap: 5px;
+        max-height: 350px; /* Altura máxima para ativar o scroll */
+
     }
 
     .project-card {
         width: 130px;
-        padding: 5px ;
+        padding: 5px;
         margin-bottom: 5px;
     }
 
@@ -79,9 +99,13 @@
 }
 
 @media (max-width: 400px) {
+    .projects-grid{
+        max-height: 250px; /* Altura máxima para ativar o scroll */
+
+    }
     .project-card {
         width: 90vw;
-        padding: 2px ;
+        padding: 2px;
         margin: auto;
         margin-bottom: 5px;
     }
