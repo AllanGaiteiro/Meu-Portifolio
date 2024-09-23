@@ -133,8 +133,12 @@
   }
 
   .contact-redirect {
+    margin: auto;
     margin-top: 15px;
-    /* Aumenta o espaço acima do link de contato */
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: white !important;
+    width: 40vw;
   }
 
   .about-contacts {
