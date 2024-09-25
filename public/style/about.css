@@ -127,6 +127,7 @@
   .contact-redirect {
     margin: auto;
     margin-top: 15px;
+    border-radius: 5px;
     border: 2px solid var(--accent-color);
     background-color: var(--accent-color);
     color: white !important;
