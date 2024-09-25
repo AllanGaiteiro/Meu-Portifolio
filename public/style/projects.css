@@ -15,8 +15,9 @@
 .project-card {
     background-color: var(--card-background);
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: 1fr 2fr 1fr;
     padding: 5px 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
