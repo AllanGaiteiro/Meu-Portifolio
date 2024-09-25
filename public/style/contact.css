@@ -9,7 +9,7 @@
 
 .contact-container {
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px;
 }
 
 .btn {
@@ -106,6 +106,8 @@
 
   .contact-container {
     margin: 0px;
+    margin-left: 10px;
+
   }
 
   #contact ul {

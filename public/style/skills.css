@@ -77,13 +77,12 @@ hr{
 
 @media (max-width: 768px) {
   #skills{
-    margin: 0px;
-    padding: 0px;
-    height: 1000px;
-    background-color: var(--muted-color);
+    height: 100vh;
   }
   .skills-container{
-    padding: 5px;
+    margin-left: 10px;
+    padding: 0px;
+
   }
 
   .skills-category{

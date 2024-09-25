@@ -87,12 +87,12 @@
 @media (max-width: 600px) {
     :root {
         /* Ajustes para tablets e celulares */
-        --scene-width: 75vw;
+        --scene-width: 70vw;
         /* Cubo maior em telas menores */
         --scene-height: 50vw;
         /* Mantendo 1:1 no mobile */
-        --perspective: 700px;
-        --translateZ: 37.5vw;
+        --perspective: 800px;
+        --translateZ: 35vw;
         /* Reduzido para melhor adaptação em mobile */
     }  
 }

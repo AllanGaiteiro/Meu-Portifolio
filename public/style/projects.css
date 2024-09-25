@@ -78,6 +78,9 @@
 
     .projects-container {
         margin: 0px;
+        margin-left: 10px;
+
+        padding: 0px;
         max-height: 300px; /* Altura máxima menor para telas menores */
     }
 
