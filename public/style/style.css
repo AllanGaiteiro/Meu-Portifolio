@@ -2,31 +2,20 @@
 :root {
   --font-family: Arial, sans-serif;
   --background-color: #121212;
-  /* Fundo muito escuro */
   --card-background: #1E1E1E;
-  /* Cartões e seções */
   --accent-color: #4CAF50;
-  /* Verde vibrante para ações */
   --text-color: #E0E0E0;
   --text-menu-color: #4CAF50;
-  /* Texto claro */
   --muted-color: #2f4049;
-  /* Texto secundário */
 }
 
 body.white-mode {
   --background-color: #121212;
-  /* Fundo branco */
   --card-background: #F1F1F1;
-  /* Cartões e seções */
   --accent-color: #0077B5;
-  /* Azul para ações */
   --text-color: #212121;
   --text-menu-color: #E0E0E0;
-
-  /* Texto escuro */
   --muted-color: #FFFFFF;
-  /* Texto secundário */
 }
 
 html {
@@ -48,6 +37,7 @@ li {
 }
 
 body {
+  position: relative;
   font-family: Arial, sans-serif;
   background: var(--muted-color);
   color: var(--text-color);
@@ -60,18 +50,16 @@ body {
 }
 
 .container {
-  display: flex;
+  position: fixed;
+  top: 15vh;
+  left: 30vw;
 }
 
 .animated-heading {
   display: inline-block;
   overflow: hidden;
-  /* Esconde o texto que não foi "digitado" ainda */
-  /* Evita que o texto quebre em várias linhas */
   border-right: 2px solid var(--accent-color);
-  /* Cursor de digitação */
   animation: blink 0.7s step-end infinite;
-  /* Animação do cursor */
 }
 
 .blue {
@@ -91,10 +79,39 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   body{
     width: 100vw;
     height: auto;
     margin: 0px;
+  }
+
+  .container {
+    top: 15vh;
+    left:15vw;
+
+  }
+}
+
+@media (max-width: 760px) {
+
+  .container {
+    left:12vw;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    top: 10vh;
+
+    left:10vw;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .container {
+    left:5vw;
   }
 }

@@ -23,10 +23,8 @@
 .skills-list {
   display: flex;
   overflow-x: auto;
-  /* Habilita o scroll horizontal */
   gap: 15px;
   padding: 0px;
-  /* Espaço extra para evitar que o conteúdo fique muito próximo da borda */
   width: 300px
 }
 
@@ -84,6 +82,9 @@ hr{
     height: 1000px;
     background-color: var(--muted-color);
   }
+  .skills-container{
+    padding: 5px;
+  }
 
   .skills-category{
     display: block;
@@ -98,13 +99,6 @@ hr{
   }
   .skills-list {
     min-width: 200px;
-
-  }
-}
-
-@media (max-width: 768px) {
-  .skills-list {
-    min-width: 200px;
-    max-width: 70vw;
+    width: 90%;
   }
 }

@@ -42,15 +42,14 @@
   box-shadow: inset 0 0 0 50px var(--text-menu-color);
 }
 
-/* Media query para mobile (largura máxima de 768px) */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .navbar-navigation {
     width: 100vw;
     height: auto;
     margin: 0px;
     padding: 0px;
     z-index: 3;
-    flex-direction: row ; /* Alinha na horizontal */
+    flex-direction: row ;
     justify-content: space-around;
   }
 
@@ -80,20 +79,16 @@
 @keyframes blink {
   50% {
     border-color: transparent;
-    /* Fica invisível metade do tempo */
   }
 }
 
 @keyframes fadeIn {
   to {
     opacity: 1;
-    /* Finaliza visível */
     transform: translateY(0);
-    /* Retorna à posição original */
   }
 }
 
-/* Estilos para o interruptor */
 .switch {
   position: absolute;
   bottom: 20px;
@@ -116,7 +111,6 @@
   right: 0;
   bottom: 0;
   background-color: #165286;
-  /* Azul céu escuro quando desativado */
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -129,19 +123,16 @@
   left: 4px;
   bottom: 4px;
   background-color: white;
-  /* Bola branca quando desativada */
   transition: 0.4s;
   border-radius: 50%;
 }
 
 input:checked+.slider {
   background-color: #87CEEB;
-  /* Azul céu quando ativado */
 }
 
 input:checked+.slider:before {
   background-color: rgb(251, 255, 0);
-  /* Bola amarela quando ativada */
   transform: translateX(26px);
 }
 
