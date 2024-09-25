@@ -76,6 +76,12 @@
 
 }
 
+@media (max-width: 490px) {
+  .navbar-navigation span {
+    display: none;
+  }
+}
+
 
 @keyframes blink {
   50% {
